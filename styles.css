@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    padding: 0px;
+
+    --baby-pink: #fac8cdff;
+    --queen-pink: #d7bcc8ff;
+    --opal: #98b6b1ff;
+    --russian-green: #629677ff;
+    --deep-space-sparkle: #495d63ff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+.header {
+    grid-column: 2 / 3;
+}
+
+.sidebar {
+    background-color: var(--russian-green);
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    min-height: 100vh;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.sidebar .title {
+    font-size: x-large;
+}
+
+ul {
+    list-style: none;
+    display: grid;
+    gap: 15px;
+}
+
+.dashboard {
+    background-color: var(--opal);
+}
