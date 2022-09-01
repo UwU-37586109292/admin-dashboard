@@ -1,13 +1,18 @@
-body {
-    margin: 0px;
-    padding: 0px;
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
 
+body {
     --baby-pink: #fac8cdff;
     --queen-pink: #d7bcc8ff;
     --opal: #98b6b1ff;
     --russian-green: #629677ff;
     --deep-space-sparkle: #495d63ff;
 }
+
 
 .container {
     display: grid;
@@ -19,6 +24,7 @@ body {
     grid-column: 2 / 3;
 }
 
+/* sidebar */
 .sidebar {
     background-color: var(--russian-green);
     grid-column: 1 / 2;
@@ -26,6 +32,11 @@ body {
     min-height: 100vh;
     color: aliceblue;
     font-weight: bold;
+
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(3, auto) 1fr;
+    padding: 20px;
 }
 
 .sidebar .title {
@@ -35,9 +46,13 @@ body {
 ul {
     list-style: none;
     display: grid;
-    gap: 15px;
 }
 
+ul li {
+    margin-bottom: 5px;
+}
+
+/* main body */
 .dashboard {
     background-color: var(--opal);
 }
