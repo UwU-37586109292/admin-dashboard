@@ -42,10 +42,17 @@ body {
 
 .sidebar .title {
     font-size: x-large;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr;
+    gap: 9px;
 }
 
 .sidebar img {
-    width: clamp(15px, 1rem, 25px);
+    width: 19px;
+}
+
+.sidebar>.title>img {
+    width: 28px;
 }
 
 ul {
@@ -54,7 +61,10 @@ ul {
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, auto) 1fr;
+    gap: 18px;
 }
 
 /* main body */
