@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'kayak';
+    src: url('./assets/Kayak\ Sans\ Regular.otf') format('opentype');
+    font-weight: normal;
+    font-size: normal;
+}
+
 body,
 ul,
 li {
@@ -11,6 +18,8 @@ body {
     --opal: #98b6b1ff;
     --russian-green: #629677ff;
     --deep-space-sparkle: #495d63ff;
+
+    font-family: "kayak", Arial, Helvetica, sans-serif;
 }
 
 
@@ -32,6 +41,7 @@ body {
     grid-row: 1 / 3;
     min-height: 100vh;
     color: aliceblue;
+    font-size: large;
     font-weight: bold;
 
     display: grid;
