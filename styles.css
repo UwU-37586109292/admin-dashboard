@@ -22,15 +22,28 @@ body {
     font-family: "kayak", Arial, Helvetica, sans-serif;
 }
 
-
 .container {
     display: grid;
     grid-template-columns: auto 5fr;
     grid-template-rows: 1fr 7fr;
 }
 
+
+img {
+    width: 19px;
+}
+
+/* header */
 .header {
     grid-column: 2 / 3;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.avatar {
+    width: 80px;
 }
 
 /* sidebar */
@@ -55,10 +68,6 @@ body {
     display: grid;
     grid-template-columns: repeat(2, auto) 1fr;
     gap: 9px;
-}
-
-.sidebar img {
-    width: 19px;
 }
 
 .sidebar>.title>img {
