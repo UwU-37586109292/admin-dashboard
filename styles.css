@@ -38,12 +38,59 @@ img {
     grid-column: 2 / 3;
 
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: 1fr auto;
     grid-template-rows: repeat(2, auto);
+    margin: 25px;
+}
+
+.search-section {
+    columns: 1 / 2;
+    rows: 1 / 2;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+input[type="search"] {
+    border: none;
+    border-radius: 8px;
+    background-color: lightgray;
+    padding: 5px;
+    margin: 5px;
+}
+
+.user-info {
+    columns: 2 / 3;
+    rows: 1 / 2;
+}
+
+.user-greeting {
+    columns: 1 / 2;
+    rows: 2 / 3;
+}
+
+.controls {
+    columns: 2 / 3;
+    rows: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+button {
+    background-color: var(--russian-green);
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    min-width: 80px;
+    padding: 8px 20px;
+    margin: 5px;
+    align-self: center;
 }
 
 .avatar {
     width: 80px;
+    border-radius: 80px;
 }
 
 /* sidebar */
