@@ -44,8 +44,8 @@ img {
 }
 
 .search-section {
-    columns: 1 / 2;
-    rows: 1 / 2;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 
     display: grid;
     grid-template-columns: auto 1fr;
@@ -58,16 +58,22 @@ input[type="search"] {
     background-color: lightgray;
     padding: 5px;
     margin: 5px;
+    max-width: 700px;
 }
 
 .user-info {
-    columns: 2 / 3;
-    rows: 1 / 2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: end;
+
 
     display: grid;
     grid-template-columns: repeat(3, auto);
-    justify-items: end;
     align-items: center;
+}
+
+.user-info>* {
+    margin: 10px;
 }
 
 .user-greeting {
@@ -98,8 +104,8 @@ input[type="search"] {
 }
 
 .controls {
-    columns: 2 / 3;
-    rows: 2 / 3;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
@@ -111,7 +117,7 @@ button {
     border-radius: 20px;
     min-width: 80px;
     padding: 8px 20px;
-    margin: 5px;
+    margin: 9px;
     align-self: center;
 }
 
