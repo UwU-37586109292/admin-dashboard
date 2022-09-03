@@ -190,6 +190,46 @@ ul li {
     grid-area: projects;
 }
 
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.header,
+.title {
+    font-size: large;
+    margin-bottom: 5px;
+}
+
+.card,
+.announcements,
+.trending {
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.card {
+    min-height: 150px;
+    border-left: 4px solid var(--deep-space-sparkle);
+    padding: 10px;
+}
+
+.icons {
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    grid-template-rows: 1fr auto;
+    justify-items: end;
+    align-content: end;
+}
+
+.card .content {
+    color: grey;
+}
+
 .announcements {
     grid-area: announcements;
 }
