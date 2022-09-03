@@ -11,6 +11,7 @@ for (let i = 0; i < cards.length; i++) {
 
     const forkIcon = document.createElement('img');
     forkIcon.setAttribute('src', './assets/source-fork.png');
+
     iconsContainer.appendChild(favIcon);
     iconsContainer.appendChild(observeIcon);
     iconsContainer.appendChild(forkIcon);
@@ -19,4 +20,3 @@ for (let i = 0; i < cards.length; i++) {
     element.appendChild(iconsContainer);
 }
 
-// cards[1].appendChild(favIcon);

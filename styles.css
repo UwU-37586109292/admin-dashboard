@@ -134,7 +134,7 @@ button {
 /* sidebar */
 .sidebar {
     min-width: 200px;
-    height: 100vh;
+    min-height: 100vh;
     box-sizing: border-box;
 
     color: aliceblue;
@@ -208,22 +208,34 @@ ul li {
     background-color: aliceblue;
     border-radius: 5px;
     margin: 10px;
-    padding: 5px;
+    padding: 25px;
+}
+
+.announcement {
+    padding: 10px;
+}
+
+.announcement:not(*:last-child) {
+    border-bottom: 1px solid lightgray;
 }
 
 .card {
     min-height: 150px;
-    border-left: 4px solid var(--deep-space-sparkle);
+    border-left: 5px solid var(--deep-space-sparkle);
     padding: 10px;
 }
 
 .icons {
-    margin: auto 0;
     display: grid;
     grid-template-columns: 1fr repeat(3, auto);
     grid-template-rows: 1fr auto;
+
+    gap: 5px;
     justify-items: end;
-    align-content: end;
+}
+
+.icons>img {
+    grid-row: 2 / 3;
 }
 
 .card .content {
