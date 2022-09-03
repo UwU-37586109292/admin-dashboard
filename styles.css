@@ -238,7 +238,7 @@ ul li {
     grid-row: 2 / 3;
 }
 
-.card .content {
+* .content {
     color: grey;
 }
 
