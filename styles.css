@@ -180,10 +180,10 @@ ul li {
     background-color: var(--opal);
     display: grid;
     grid-template-areas:
-        "projects projects announcements"
-        "projects projects announcements"
-        "projects projects trending"
-        "projects projects trending";
+        "projects projects anns"
+        "projects projects anns"
+        "projects projects trends"
+        "projects projects trends";
 }
 
 .projects {
@@ -242,10 +242,32 @@ ul li {
     color: grey;
 }
 
-.announcements {
-    grid-area: announcements;
+.announcements-section {
+    grid-area: anns;
 }
 
-.trending {
-    grid-area: trending;
+.trending-section {
+    grid-area: trends;
+}
+
+.trending-user {
+    display: grid;
+    grid-template-areas:
+        "av handle"
+        "av text";
+    grid-template-columns: auto 1fr;
+    margin-bottom: 15px;
+}
+
+.trending-user>img {
+    grid-area: av;
+    margin-right: 8px;
+}
+
+.trending-user .user-handle {
+    grid-area: handle;
+}
+
+.trending-user .content {
+    grid-area: text;
 }
